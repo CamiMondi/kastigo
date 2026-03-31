@@ -133,8 +133,8 @@
     navigator.serviceWorker.register('sw.js');
   }
 
-  const INICIO = new Date('2026-03-11T12:00:00-03:00');
-  const FIN    = new Date('2030-03-11T12:00:00-03:00');
+  const INICIO = new Date('2026-03-11T12:00:00-00:00');
+  const FIN    = new Date('2030-03-11T12:00:00-00:00');
   function actualizar() {
     const ahora = new Date();
     document.getElementById('trans').textContent = Math.max(0, Math.floor((ahora - INICIO) / 86400000));
@@ -144,4 +144,4 @@
   setInterval(actualizar, 60000);
 </script>
 </body>
-</html>
+</html> 
